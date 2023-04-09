@@ -11,6 +11,10 @@
 		DCF41CAF29E0AB3300D3264F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF41CAE29E0AB3300D3264F /* ContentView.swift */; };
 		DCF41CB129E0AB3400D3264F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF41CB029E0AB3400D3264F /* Assets.xcassets */; };
 		DCF41CB429E0AB3400D3264F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF41CB329E0AB3400D3264F /* Preview Assets.xcassets */; };
+		DCF852D329E377E70006E12A /* APIServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852D229E377E70006E12A /* APIServiceContract.swift */; };
+		DCF852D529E379060006E12A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852D429E379060006E12A /* APIService.swift */; };
+		DCF852DA29E37ACF0006E12A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852D929E37ACF0006E12A /* APIConstants.swift */; };
+		DCF852DC29E37B4E0006E12A /* APIRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852DB29E37B4E0006E12A /* APIRequestBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		DCF41CAE29E0AB3300D3264F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DCF41CB029E0AB3400D3264F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCF41CB329E0AB3400D3264F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCF852D229E377E70006E12A /* APIServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceContract.swift; sourceTree = "<group>"; };
+		DCF852D429E379060006E12A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DCF852D929E37ACF0006E12A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		DCF852DB29E37B4E0006E12A /* APIRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			children = (
 				DCF41CAC29E0AB3300D3264F /* Autoscout24_TaskApp.swift */,
 				DCF41CAE29E0AB3300D3264F /* ContentView.swift */,
+				DCF852D029E377C20006E12A /* Utilities */,
 				DCF41CB029E0AB3400D3264F /* Assets.xcassets */,
 				DCF41CB229E0AB3400D3264F /* Preview Content */,
 			);
@@ -65,6 +74,49 @@
 				DCF41CB329E0AB3400D3264F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCF852D029E377C20006E12A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852D829E37AC10006E12A /* Constants */,
+				DCF852D129E377C90006E12A /* Network */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DCF852D129E377C90006E12A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852D729E37AB20006E12A /* Builder */,
+				DCF852D629E37AA80006E12A /* Service */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DCF852D629E37AA80006E12A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852D229E377E70006E12A /* APIServiceContract.swift */,
+				DCF852D429E379060006E12A /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DCF852D729E37AB20006E12A /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852DB29E37B4E0006E12A /* APIRequestBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		DCF852D829E37AC10006E12A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852D929E37ACF0006E12A /* APIConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCF41CAF29E0AB3300D3264F /* ContentView.swift in Sources */,
+				DCF852DA29E37ACF0006E12A /* APIConstants.swift in Sources */,
+				DCF852D329E377E70006E12A /* APIServiceContract.swift in Sources */,
+				DCF852D529E379060006E12A /* APIService.swift in Sources */,
+				DCF852DC29E37B4E0006E12A /* APIRequestBuilder.swift in Sources */,
 				DCF41CAD29E0AB3300D3264F /* Autoscout24_TaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
