@@ -15,6 +15,11 @@
 		DCF852D529E379060006E12A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852D429E379060006E12A /* APIService.swift */; };
 		DCF852DA29E37ACF0006E12A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852D929E37ACF0006E12A /* APIConstants.swift */; };
 		DCF852DC29E37B4E0006E12A /* APIRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852DB29E37B4E0006E12A /* APIRequestBuilder.swift */; };
+		DCF852E929E37F1A0006E12A /* UsedCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852E829E37F1A0006E12A /* UsedCarModel.swift */; };
+		DCF852ED29E380060006E12A /* UsedCarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852EC29E380060006E12A /* UsedCarsService.swift */; };
+		DCF852F229E380A20006E12A /* UsedCarsServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852F129E380A20006E12A /* UsedCarsServiceContract.swift */; };
+		DCF852F429E381830006E12A /* UsedCarsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852F329E381830006E12A /* UsedCarsRepository.swift */; };
+		DCF852F629E381A20006E12A /* UsedCarsRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852F529E381A20006E12A /* UsedCarsRepositoryContract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		DCF852D429E379060006E12A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		DCF852D929E37ACF0006E12A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		DCF852DB29E37B4E0006E12A /* APIRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestBuilder.swift; sourceTree = "<group>"; };
+		DCF852E829E37F1A0006E12A /* UsedCarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarModel.swift; sourceTree = "<group>"; };
+		DCF852EC29E380060006E12A /* UsedCarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsService.swift; sourceTree = "<group>"; };
+		DCF852F129E380A20006E12A /* UsedCarsServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsServiceContract.swift; sourceTree = "<group>"; };
+		DCF852F329E381830006E12A /* UsedCarsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsRepository.swift; sourceTree = "<group>"; };
+		DCF852F529E381A20006E12A /* UsedCarsRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsRepositoryContract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +69,8 @@
 		DCF41CAB29E0AB3300D3264F /* Autoscout24-Task */ = {
 			isa = PBXGroup;
 			children = (
-				DCF41CAC29E0AB3300D3264F /* Autoscout24_TaskApp.swift */,
-				DCF41CAE29E0AB3300D3264F /* ContentView.swift */,
+				DCF852DE29E37E790006E12A /* Scenes */,
+				DCF852DD29E37E6E0006E12A /* Application */,
 				DCF852D029E377C20006E12A /* Utilities */,
 				DCF41CB029E0AB3400D3264F /* Assets.xcassets */,
 				DCF41CB229E0AB3400D3264F /* Preview Content */,
@@ -117,6 +127,139 @@
 				DCF852D929E37ACF0006E12A /* APIConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		DCF852DD29E37E6E0006E12A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DCF41CAC29E0AB3300D3264F /* Autoscout24_TaskApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DCF852DE29E37E790006E12A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852DF29E37E9F0006E12A /* UsedCarsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DCF852DF29E37E9F0006E12A /* UsedCarsList */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852E129E37EB00006E12A /* Data */,
+				DCF852E229E37EB60006E12A /* Domain */,
+				DCF852E029E37EA90006E12A /* Presentation */,
+			);
+			path = UsedCarsList;
+			sourceTree = "<group>";
+		};
+		DCF852E029E37EA90006E12A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852E429E37EC60006E12A /* ViewModel */,
+				DCF852E329E37EC10006E12A /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DCF852E129E37EB00006E12A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852EB29E37FF80006E12A /* Service */,
+				DCF852EA29E37FF20006E12A /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DCF852E229E37EB60006E12A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852E729E37EFC0006E12A /* UseCases */,
+				DCF852E629E37EF40006E12A /* Interfaces */,
+				DCF852E529E37EE70006E12A /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DCF852E329E37EC10006E12A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCF41CAE29E0AB3300D3264F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DCF852E429E37EC60006E12A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DCF852E529E37EE70006E12A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852E829E37F1A0006E12A /* UsedCarModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DCF852E629E37EF40006E12A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852F029E3808E0006E12A /* UseCases */,
+				DCF852EF29E380820006E12A /* Repository */,
+				DCF852EE29E3801A0006E12A /* Service */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		DCF852E729E37EFC0006E12A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		DCF852EA29E37FF20006E12A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852F329E381830006E12A /* UsedCarsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DCF852EB29E37FF80006E12A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852EC29E380060006E12A /* UsedCarsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DCF852EE29E3801A0006E12A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852F129E380A20006E12A /* UsedCarsServiceContract.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DCF852EF29E380820006E12A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852F529E381A20006E12A /* UsedCarsRepositoryContract.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DCF852F029E3808E0006E12A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,11 +333,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCF41CAF29E0AB3300D3264F /* ContentView.swift in Sources */,
+				DCF852F429E381830006E12A /* UsedCarsRepository.swift in Sources */,
 				DCF852DA29E37ACF0006E12A /* APIConstants.swift in Sources */,
 				DCF852D329E377E70006E12A /* APIServiceContract.swift in Sources */,
+				DCF852ED29E380060006E12A /* UsedCarsService.swift in Sources */,
 				DCF852D529E379060006E12A /* APIService.swift in Sources */,
 				DCF852DC29E37B4E0006E12A /* APIRequestBuilder.swift in Sources */,
+				DCF852F629E381A20006E12A /* UsedCarsRepositoryContract.swift in Sources */,
 				DCF41CAD29E0AB3300D3264F /* Autoscout24_TaskApp.swift in Sources */,
+				DCF852F229E380A20006E12A /* UsedCarsServiceContract.swift in Sources */,
+				DCF852E929E37F1A0006E12A /* UsedCarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
