@@ -20,6 +20,8 @@
 		DCF852F229E380A20006E12A /* UsedCarsServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852F129E380A20006E12A /* UsedCarsServiceContract.swift */; };
 		DCF852F429E381830006E12A /* UsedCarsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852F329E381830006E12A /* UsedCarsRepository.swift */; };
 		DCF852F629E381A20006E12A /* UsedCarsRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852F529E381A20006E12A /* UsedCarsRepositoryContract.swift */; };
+		DCF852F929E3823E0006E12A /* UsedCarsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852F829E3823E0006E12A /* UsedCarsListUseCase.swift */; };
+		DCF852FB29E382550006E12A /* UsedCarsListUseCaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852FA29E382550006E12A /* UsedCarsListUseCaseContract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		DCF852F129E380A20006E12A /* UsedCarsServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsServiceContract.swift; sourceTree = "<group>"; };
 		DCF852F329E381830006E12A /* UsedCarsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsRepository.swift; sourceTree = "<group>"; };
 		DCF852F529E381A20006E12A /* UsedCarsRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsRepositoryContract.swift; sourceTree = "<group>"; };
+		DCF852F829E3823E0006E12A /* UsedCarsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsListUseCase.swift; sourceTree = "<group>"; };
+		DCF852FA29E382550006E12A /* UsedCarsListUseCaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsListUseCaseContract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,7 @@
 		DCF852E729E37EFC0006E12A /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				DCF852F829E3823E0006E12A /* UsedCarsListUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 		DCF852F029E3808E0006E12A /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				DCF852FA29E382550006E12A /* UsedCarsListUseCaseContract.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -339,7 +345,9 @@
 				DCF852ED29E380060006E12A /* UsedCarsService.swift in Sources */,
 				DCF852D529E379060006E12A /* APIService.swift in Sources */,
 				DCF852DC29E37B4E0006E12A /* APIRequestBuilder.swift in Sources */,
+				DCF852F929E3823E0006E12A /* UsedCarsListUseCase.swift in Sources */,
 				DCF852F629E381A20006E12A /* UsedCarsRepositoryContract.swift in Sources */,
+				DCF852FB29E382550006E12A /* UsedCarsListUseCaseContract.swift in Sources */,
 				DCF41CAD29E0AB3300D3264F /* Autoscout24_TaskApp.swift in Sources */,
 				DCF852F229E380A20006E12A /* UsedCarsServiceContract.swift in Sources */,
 				DCF852E929E37F1A0006E12A /* UsedCarModel.swift in Sources */,
