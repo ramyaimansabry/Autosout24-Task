@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DCF41CAD29E0AB3300D3264F /* Autoscout24_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF41CAC29E0AB3300D3264F /* Autoscout24_TaskApp.swift */; };
-		DCF41CAF29E0AB3300D3264F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF41CAE29E0AB3300D3264F /* ContentView.swift */; };
+		DCF41CAF29E0AB3300D3264F /* UsedCarsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF41CAE29E0AB3300D3264F /* UsedCarsListView.swift */; };
 		DCF41CB129E0AB3400D3264F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF41CB029E0AB3400D3264F /* Assets.xcassets */; };
 		DCF41CB429E0AB3400D3264F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF41CB329E0AB3400D3264F /* Preview Assets.xcassets */; };
 		DCF852D329E377E70006E12A /* APIServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852D229E377E70006E12A /* APIServiceContract.swift */; };
@@ -22,12 +22,22 @@
 		DCF852F629E381A20006E12A /* UsedCarsRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852F529E381A20006E12A /* UsedCarsRepositoryContract.swift */; };
 		DCF852F929E3823E0006E12A /* UsedCarsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852F829E3823E0006E12A /* UsedCarsListUseCase.swift */; };
 		DCF852FB29E382550006E12A /* UsedCarsListUseCaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852FA29E382550006E12A /* UsedCarsListUseCaseContract.swift */; };
+		DCF852FF29E3832F0006E12A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF852FE29E3832F0006E12A /* BaseViewModel.swift */; };
+		DCF8530229E3834C0006E12A /* DisposableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8530129E3834C0006E12A /* DisposableObject.swift */; };
+		DCF8530629E383700006E12A /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8530529E383700006E12A /* ViewModelState.swift */; };
+		DCF8530829E383A60006E12A /* UsedCarsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8530729E383A60006E12A /* UsedCarsListViewModel.swift */; };
+		DCF8530B29E385FF0006E12A /* CarRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8530A29E385FF0006E12A /* CarRowView.swift */; };
+		DCF8530F29E38AAC0006E12A /* UsedCarModelRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8530E29E38AAC0006E12A /* UsedCarModelRepresentable.swift */; };
+		DCF8531129E38B770006E12A /* CarSellerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8531029E38B770006E12A /* CarSellerModel.swift */; };
+		DCF8531329E38BB10006E12A /* FuelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8531229E38BB00006E12A /* FuelType.swift */; };
+		DCF8531629E3972C0006E12A /* View+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8531529E3972C0006E12A /* View+Helpers.swift */; };
+		DCF8531A29E3B6E40006E12A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8531929E3B6E40006E12A /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DCF41CA929E0AB3300D3264F /* Autoscout24-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autoscout24-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF41CAC29E0AB3300D3264F /* Autoscout24_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autoscout24_TaskApp.swift; sourceTree = "<group>"; };
-		DCF41CAE29E0AB3300D3264F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCF41CAE29E0AB3300D3264F /* UsedCarsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsListView.swift; sourceTree = "<group>"; };
 		DCF41CB029E0AB3400D3264F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCF41CB329E0AB3400D3264F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCF852D229E377E70006E12A /* APIServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceContract.swift; sourceTree = "<group>"; };
@@ -41,6 +51,17 @@
 		DCF852F529E381A20006E12A /* UsedCarsRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsRepositoryContract.swift; sourceTree = "<group>"; };
 		DCF852F829E3823E0006E12A /* UsedCarsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsListUseCase.swift; sourceTree = "<group>"; };
 		DCF852FA29E382550006E12A /* UsedCarsListUseCaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsListUseCaseContract.swift; sourceTree = "<group>"; };
+		DCF852FE29E3832F0006E12A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		DCF8530129E3834C0006E12A /* DisposableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposableObject.swift; sourceTree = "<group>"; };
+		DCF8530529E383700006E12A /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
+		DCF8530729E383A60006E12A /* UsedCarsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsListViewModel.swift; sourceTree = "<group>"; };
+		DCF8530A29E385FF0006E12A /* CarRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRowView.swift; sourceTree = "<group>"; };
+		DCF8530C29E3897A0006E12A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DCF8530E29E38AAC0006E12A /* UsedCarModelRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarModelRepresentable.swift; sourceTree = "<group>"; };
+		DCF8531029E38B770006E12A /* CarSellerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSellerModel.swift; sourceTree = "<group>"; };
+		DCF8531229E38BB00006E12A /* FuelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelType.swift; sourceTree = "<group>"; };
+		DCF8531529E3972C0006E12A /* View+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Helpers.swift"; sourceTree = "<group>"; };
+		DCF8531929E3B6E40006E12A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				DCF852DE29E37E790006E12A /* Scenes */,
+				DCF8530929E383DF0006E12A /* Resources */,
 				DCF852DD29E37E6E0006E12A /* Application */,
 				DCF852D029E377C20006E12A /* Utilities */,
-				DCF41CB029E0AB3400D3264F /* Assets.xcassets */,
+				DCF8530C29E3897A0006E12A /* Info.plist */,
 				DCF41CB229E0AB3400D3264F /* Preview Content */,
 			);
 			path = "Autoscout24-Task";
@@ -93,6 +115,9 @@
 		DCF852D029E377C20006E12A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				DCF8530329E3835B0006E12A /* Helpers */,
+				DCF8530029E3833C0006E12A /* DisoseObject */,
+				DCF852FD29E383270006E12A /* Bases */,
 				DCF852D829E37AC10006E12A /* Constants */,
 				DCF852D129E377C90006E12A /* Network */,
 			);
@@ -162,6 +187,7 @@
 		DCF852E029E37EA90006E12A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DCF8530D29E38A8F0006E12A /* Representables */,
 				DCF852E429E37EC60006E12A /* ViewModel */,
 				DCF852E329E37EC10006E12A /* View */,
 			);
@@ -190,7 +216,8 @@
 		DCF852E329E37EC10006E12A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DCF41CAE29E0AB3300D3264F /* ContentView.swift */,
+				DCF41CAE29E0AB3300D3264F /* UsedCarsListView.swift */,
+				DCF8530A29E385FF0006E12A /* CarRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +225,7 @@
 		DCF852E429E37EC60006E12A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DCF8530729E383A60006E12A /* UsedCarsListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -206,6 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				DCF852E829E37F1A0006E12A /* UsedCarModel.swift */,
+				DCF8531029E38B770006E12A /* CarSellerModel.swift */,
+				DCF8531229E38BB00006E12A /* FuelType.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -266,6 +296,80 @@
 				DCF852FA29E382550006E12A /* UsedCarsListUseCaseContract.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		DCF852FD29E383270006E12A /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				DCF8531829E3B6DB0006E12A /* View */,
+				DCF8531729E3B6C90006E12A /* ViewModel */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		DCF8530029E3833C0006E12A /* DisoseObject */ = {
+			isa = PBXGroup;
+			children = (
+				DCF8530129E3834C0006E12A /* DisposableObject.swift */,
+			);
+			path = DisoseObject;
+			sourceTree = "<group>";
+		};
+		DCF8530329E3835B0006E12A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DCF8531429E3971F0006E12A /* View+Helpers */,
+				DCF8530429E383640006E12A /* ViewModelState */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DCF8530429E383640006E12A /* ViewModelState */ = {
+			isa = PBXGroup;
+			children = (
+				DCF8530529E383700006E12A /* ViewModelState.swift */,
+			);
+			path = ViewModelState;
+			sourceTree = "<group>";
+		};
+		DCF8530929E383DF0006E12A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCF41CB029E0AB3400D3264F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCF8530D29E38A8F0006E12A /* Representables */ = {
+			isa = PBXGroup;
+			children = (
+				DCF8530E29E38AAC0006E12A /* UsedCarModelRepresentable.swift */,
+			);
+			path = Representables;
+			sourceTree = "<group>";
+		};
+		DCF8531429E3971F0006E12A /* View+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DCF8531529E3972C0006E12A /* View+Helpers.swift */,
+			);
+			path = "View+Helpers";
+			sourceTree = "<group>";
+		};
+		DCF8531729E3B6C90006E12A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCF852FE29E3832F0006E12A /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DCF8531829E3B6DB0006E12A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCF8531929E3B6E40006E12A /* BaseView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,16 +442,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF41CAF29E0AB3300D3264F /* ContentView.swift in Sources */,
+				DCF41CAF29E0AB3300D3264F /* UsedCarsListView.swift in Sources */,
+				DCF8531329E38BB10006E12A /* FuelType.swift in Sources */,
+				DCF8530F29E38AAC0006E12A /* UsedCarModelRepresentable.swift in Sources */,
 				DCF852F429E381830006E12A /* UsedCarsRepository.swift in Sources */,
 				DCF852DA29E37ACF0006E12A /* APIConstants.swift in Sources */,
+				DCF852FF29E3832F0006E12A /* BaseViewModel.swift in Sources */,
 				DCF852D329E377E70006E12A /* APIServiceContract.swift in Sources */,
 				DCF852ED29E380060006E12A /* UsedCarsService.swift in Sources */,
+				DCF8531629E3972C0006E12A /* View+Helpers.swift in Sources */,
+				DCF8530229E3834C0006E12A /* DisposableObject.swift in Sources */,
 				DCF852D529E379060006E12A /* APIService.swift in Sources */,
+				DCF8531129E38B770006E12A /* CarSellerModel.swift in Sources */,
 				DCF852DC29E37B4E0006E12A /* APIRequestBuilder.swift in Sources */,
+				DCF8530829E383A60006E12A /* UsedCarsListViewModel.swift in Sources */,
 				DCF852F929E3823E0006E12A /* UsedCarsListUseCase.swift in Sources */,
 				DCF852F629E381A20006E12A /* UsedCarsRepositoryContract.swift in Sources */,
+				DCF8530B29E385FF0006E12A /* CarRowView.swift in Sources */,
 				DCF852FB29E382550006E12A /* UsedCarsListUseCaseContract.swift in Sources */,
+				DCF8530629E383700006E12A /* ViewModelState.swift in Sources */,
+				DCF8531A29E3B6E40006E12A /* BaseView.swift in Sources */,
 				DCF41CAD29E0AB3300D3264F /* Autoscout24_TaskApp.swift in Sources */,
 				DCF852F229E380A20006E12A /* UsedCarsServiceContract.swift in Sources */,
 				DCF852E929E37F1A0006E12A /* UsedCarModel.swift in Sources */,
@@ -481,6 +595,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Autoscout24-Task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Autoscout24-Task/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -510,6 +625,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Autoscout24-Task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Autoscout24-Task/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

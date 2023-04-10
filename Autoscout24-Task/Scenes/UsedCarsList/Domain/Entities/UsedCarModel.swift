@@ -14,7 +14,7 @@ struct UsedCarModel: Codable {
     let price: Int?
     let firstRegistration: String?
     let mileage: Int?
-    let fuel: String?
+    let fuel: FuelType?
     let images: [ImageResponseModel]?
     let description: String?
     let modelline: String?
@@ -24,10 +24,4 @@ struct UsedCarModel: Codable {
 
 struct ImageResponseModel: Codable {
     let url: String?
-}
-
-struct CarSellerModel: Codable {
-    let type: String?
-    let phone: String?
-    let city: String?
 }
