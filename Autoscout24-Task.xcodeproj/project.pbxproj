@@ -27,7 +27,7 @@
 		DCF8530629E383700006E12A /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8530529E383700006E12A /* ViewModelState.swift */; };
 		DCF8530829E383A60006E12A /* UsedCarsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8530729E383A60006E12A /* UsedCarsListViewModel.swift */; };
 		DCF8530B29E385FF0006E12A /* CarRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8530A29E385FF0006E12A /* CarRowView.swift */; };
-		DCF8530F29E38AAC0006E12A /* UsedCarModelRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8530E29E38AAC0006E12A /* UsedCarModelRepresentable.swift */; };
+		DCF8530F29E38AAC0006E12A /* UsedCarRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8530E29E38AAC0006E12A /* UsedCarRepresentable.swift */; };
 		DCF8531129E38B770006E12A /* CarSellerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8531029E38B770006E12A /* CarSellerModel.swift */; };
 		DCF8531329E38BB10006E12A /* FuelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8531229E38BB00006E12A /* FuelType.swift */; };
 		DCF8531629E3972C0006E12A /* View+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8531529E3972C0006E12A /* View+Helpers.swift */; };
@@ -57,7 +57,7 @@
 		DCF8530729E383A60006E12A /* UsedCarsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsListViewModel.swift; sourceTree = "<group>"; };
 		DCF8530A29E385FF0006E12A /* CarRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRowView.swift; sourceTree = "<group>"; };
 		DCF8530C29E3897A0006E12A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		DCF8530E29E38AAC0006E12A /* UsedCarModelRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarModelRepresentable.swift; sourceTree = "<group>"; };
+		DCF8530E29E38AAC0006E12A /* UsedCarRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarRepresentable.swift; sourceTree = "<group>"; };
 		DCF8531029E38B770006E12A /* CarSellerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSellerModel.swift; sourceTree = "<group>"; };
 		DCF8531229E38BB00006E12A /* FuelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelType.swift; sourceTree = "<group>"; };
 		DCF8531529E3972C0006E12A /* View+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Helpers.swift"; sourceTree = "<group>"; };
@@ -343,7 +343,7 @@
 		DCF8530D29E38A8F0006E12A /* Representables */ = {
 			isa = PBXGroup;
 			children = (
-				DCF8530E29E38AAC0006E12A /* UsedCarModelRepresentable.swift */,
+				DCF8530E29E38AAC0006E12A /* UsedCarRepresentable.swift */,
 			);
 			path = Representables;
 			sourceTree = "<group>";
@@ -444,7 +444,7 @@
 			files = (
 				DCF41CAF29E0AB3300D3264F /* UsedCarsListView.swift in Sources */,
 				DCF8531329E38BB10006E12A /* FuelType.swift in Sources */,
-				DCF8530F29E38AAC0006E12A /* UsedCarModelRepresentable.swift in Sources */,
+				DCF8530F29E38AAC0006E12A /* UsedCarRepresentable.swift in Sources */,
 				DCF852F429E381830006E12A /* UsedCarsRepository.swift in Sources */,
 				DCF852DA29E37ACF0006E12A /* APIConstants.swift in Sources */,
 				DCF852FF29E3832F0006E12A /* BaseViewModel.swift in Sources */,

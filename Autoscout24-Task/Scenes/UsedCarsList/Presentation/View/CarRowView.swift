@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CarRowView: View {
-    var data: UsedCarModelRepresentable
+    var data: UsedCarRepresentable
     
     var body: some View {
         VStack {

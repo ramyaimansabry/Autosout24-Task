@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol UsedCarModelRepresentable {
+protocol UsedCarRepresentable {
     var id: Int { get }
     var carImages: [String] { get }
     var fullTitle: String { get }
@@ -18,7 +18,7 @@ protocol UsedCarModelRepresentable {
     var carMileage: String? { get }
 }
 
-extension UsedCarModel: UsedCarModelRepresentable {
+extension UsedCarModel: UsedCarRepresentable {
     var carImages: [String] {
         return images?.compactMap({ $0.url }) ?? []
     }

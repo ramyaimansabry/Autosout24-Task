@@ -11,7 +11,7 @@ import Combine
 final class UsedCarsListViewModel: BaseViewModel, ObservableObject {
     private let useCase: UsedCarsListUseCaseContract
     
-    @Published var carsList: [UsedCarModelRepresentable] = []
+    @Published var carsList: [UsedCarRepresentable] = []
     
     init(useCase: UsedCarsListUseCaseContract = UsedCarsListUseCase()) {
         self.useCase = useCase
