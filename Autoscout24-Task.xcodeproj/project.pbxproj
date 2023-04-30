@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC9F282C29FABB5700A4929E /* Autoscout24_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F282B29FABB5700A4929E /* Autoscout24_TaskTests.swift */; };
+		DC9F283329FABB8300A4929E /* UsedCarsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F283229FABB8300A4929E /* UsedCarsUseCaseTests.swift */; };
 		DCF41CAD29E0AB3300D3264F /* Autoscout24_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF41CAC29E0AB3300D3264F /* Autoscout24_TaskApp.swift */; };
 		DCF41CAF29E0AB3300D3264F /* UsedCarsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF41CAE29E0AB3300D3264F /* UsedCarsListView.swift */; };
 		DCF41CB129E0AB3400D3264F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF41CB029E0AB3400D3264F /* Assets.xcassets */; };
@@ -34,7 +36,20 @@
 		DCF8531A29E3B6E40006E12A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8531929E3B6E40006E12A /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DC9F282D29FABB5700A4929E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF41CA129E0AB3300D3264F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCF41CA829E0AB3300D3264F;
+			remoteInfo = "Autoscout24-Task";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		DC9F282929FABB5700A4929E /* Autoscout24-TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Autoscout24-TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9F282B29FABB5700A4929E /* Autoscout24_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autoscout24_TaskTests.swift; sourceTree = "<group>"; };
+		DC9F283229FABB8300A4929E /* UsedCarsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsUseCaseTests.swift; sourceTree = "<group>"; };
 		DCF41CA929E0AB3300D3264F /* Autoscout24-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autoscout24-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF41CAC29E0AB3300D3264F /* Autoscout24_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autoscout24_TaskApp.swift; sourceTree = "<group>"; };
 		DCF41CAE29E0AB3300D3264F /* UsedCarsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarsListView.swift; sourceTree = "<group>"; };
@@ -65,6 +80,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC9F282629FABB5700A4929E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCF41CA629E0AB3300D3264F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,10 +97,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC9F282A29FABB5700A4929E /* Autoscout24-TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC9F282B29FABB5700A4929E /* Autoscout24_TaskTests.swift */,
+				DC9F283229FABB8300A4929E /* UsedCarsUseCaseTests.swift */,
+			);
+			path = "Autoscout24-TaskTests";
+			sourceTree = "<group>";
+		};
 		DCF41CA029E0AB3300D3264F = {
 			isa = PBXGroup;
 			children = (
 				DCF41CAB29E0AB3300D3264F /* Autoscout24-Task */,
+				DC9F282A29FABB5700A4929E /* Autoscout24-TaskTests */,
 				DCF41CAA29E0AB3300D3264F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				DCF41CA929E0AB3300D3264F /* Autoscout24-Task.app */,
+				DC9F282929FABB5700A4929E /* Autoscout24-TaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -375,6 +408,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC9F282829FABB5700A4929E /* Autoscout24-TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9F283129FABB5700A4929E /* Build configuration list for PBXNativeTarget "Autoscout24-TaskTests" */;
+			buildPhases = (
+				DC9F282529FABB5700A4929E /* Sources */,
+				DC9F282629FABB5700A4929E /* Frameworks */,
+				DC9F282729FABB5700A4929E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC9F282E29FABB5700A4929E /* PBXTargetDependency */,
+			);
+			name = "Autoscout24-TaskTests";
+			productName = "Autoscout24-TaskTests";
+			productReference = DC9F282929FABB5700A4929E /* Autoscout24-TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DCF41CA829E0AB3300D3264F /* Autoscout24-Task */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCF41CB729E0AB3400D3264F /* Build configuration list for PBXNativeTarget "Autoscout24-Task" */;
@@ -399,9 +450,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					DC9F282829FABB5700A4929E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DCF41CA829E0AB3300D3264F;
+					};
 					DCF41CA829E0AB3300D3264F = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -421,11 +476,19 @@
 			projectRoot = "";
 			targets = (
 				DCF41CA829E0AB3300D3264F /* Autoscout24-Task */,
+				DC9F282829FABB5700A4929E /* Autoscout24-TaskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC9F282729FABB5700A4929E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCF41CA729E0AB3300D3264F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,6 +501,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC9F282529FABB5700A4929E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9F282C29FABB5700A4929E /* Autoscout24_TaskTests.swift in Sources */,
+				DC9F283329FABB8300A4929E /* UsedCarsUseCaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCF41CA529E0AB3300D3264F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,7 +542,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DC9F282E29FABB5700A4929E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCF41CA829E0AB3300D3264F /* Autoscout24-Task */;
+			targetProxy = DC9F282D29FABB5700A4929E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DC9F282F29FABB5700A4929E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile.dev.banking-wallet2-pipeline-app.Autoscout24-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autoscout24-Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Autoscout24-Task";
+			};
+			name = Debug;
+		};
+		DC9F283029FABB5700A4929E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile.dev.banking-wallet2-pipeline-app.Autoscout24-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autoscout24-Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Autoscout24-Task";
+			};
+			name = Release;
+		};
 		DCF41CB529E0AB3400D3264F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -648,6 +764,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC9F283129FABB5700A4929E /* Build configuration list for PBXNativeTarget "Autoscout24-TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9F282F29FABB5700A4929E /* Debug */,
+				DC9F283029FABB5700A4929E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCF41CA429E0AB3300D3264F /* Build configuration list for PBXProject "Autoscout24-Task" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

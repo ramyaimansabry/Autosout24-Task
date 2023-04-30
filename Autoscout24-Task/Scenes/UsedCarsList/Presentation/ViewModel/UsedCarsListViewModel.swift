@@ -22,6 +22,8 @@ final class UsedCarsListViewModel: BaseViewModel, ObservableObject {
 
 extension UsedCarsListViewModel {
     func fetchData() {
+        guard state != .loading else { return }
+        
         state = .loading
         useCase
             .execute()

@@ -19,6 +19,10 @@ class APIRequestBuilder {
         return self
     }
     
+    func setURLHeaders(headers: [String: String]) {
+        
+    }
+    
     func build() -> URLRequest {
         guard let urlRequest = urlRequest else {
             fatalError("Make sure to set url request path first")

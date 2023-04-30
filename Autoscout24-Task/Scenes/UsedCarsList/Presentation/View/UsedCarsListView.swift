@@ -11,7 +11,7 @@ struct UsedCarsListView: View {
     @StateObject private var viewModel = UsedCarsListViewModel()
     
     var body: some View {
-        BaseView(state: $viewModel.state) {
+//        BaseView(state: $viewModel.state) {
             List {
                 ForEach(viewModel.carsList, id: \.id) { carData in
                     CarRowView(data: carData)
@@ -22,7 +22,7 @@ struct UsedCarsListView: View {
             .onAppear {
                 viewModel.fetchData()
             }
-        } //: BaseView
+//        } //: BaseView
     } //: body
 }
 
